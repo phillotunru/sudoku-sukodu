@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Sudoko Solver </title>
+		<link rel="stylesheet" href="./style.css"></link>
+		<script async src="./date.js"></script>
+		<script type="text/javascript" src="input.js"></script>
+		<script type="text/javascript" src="2d_array.js"></script>
+		<script type="text/javascript" src="fucker.js"></script>
+	</head>
+	<body> 
+		<h1> We will solve your sudoku </h1>
+		<h2> Input your 9x9 sudoku </h2>
+		<!--<table style="width:50%">-->
+
+
+		<form action="example/submit.html">
+		  <input type="text" name="A00" size="1">
+		  <input type="text" name="A01"size="1">
+		  <input type="text" name="A02"size="1">
+		  <input type="text" name="A03"size="1">
+		  <input type="text" name="A04"size="1">
+		  <input type="text" name="A05"size="1">
+		  <input type="text" name="A06"size="1">
+		  <input type="text" name="A07"size="1">
+		  <input type="text" name="A08"size="1"><br>
+		  <input type="text" name="A10"size="1">
+		  <input type="text" name="A11"size="1">
+		  <input type="text" name="A12"size="1">
+		  <input type="text" name="A13"size="1">
+		  <input type="text" name="A14"size="1">
+		  <input type="text" name="A15"size="1">
+		  <input type="text" name="A16"size="1">
+		  <input type="text" name="A17"size="1">
+		  <input type="text" name="A18"size="1"><br>
+		  <input type="text" name="A20" size="1">
+		  <input type="text" name="A21"size="1">
+		  <input type="text" name="A22"size="1">
+		  <input type="text" name="A23"size="1">
+		  <input type="text" name="A24"size="1">
+		  <input type="text" name="A25"size="1">
+		  <input type="text" name="A26"size="1">
+		  <input type="text" name="A27"size="1">
+		  <input type="text" name="A28"size="1"><br>
+		  <input type="text" name="A30" size="1">
+		  <input type="text" name="A31"size="1">
+		  <input type="text" name="A32"size="1">
+		  <input type="text" name="A33"size="1">
+		  <input type="text" name="A34"size="1">
+		  <input type="text" name="A35"size="1">
+		  <input type="text" name="A36"size="1">
+		  <input type="text" name="A37"size="1">
+		  <input type="text" name="A38"size="1"><br>
+		  <input type="text" name="A40" size="1">
+		  <input type="text" name="A41"size="1">
+		  <input type="text" name="A42"size="1">
+		  <input type="text" name="A43"size="1">
+		  <input type="text" name="A44"size="1">
+		  <input type="text" name="A45"size="1">
+		  <input type="text" name="A46"size="1">
+		  <input type="text" name="A47"size="1">
+		  <input type="text" name="A48"size="1"><br>
+		  <input type="text" name="A50" size="1">
+		  <input type="text" name="A51"size="1">
+		  <input type="text" name="A52"size="1">
+		  <input type="text" name="A53"size="1">
+		  <input type="text" name="A54"size="1">
+		  <input type="text" name="A55"size="1">
+		  <input type="text" name="A56"size="1">
+		  <input type="text" name="A57"size="1">
+		  <input type="text" name="A58"size="1"><br>
+		  <input type="text" name="A60" size="1">
+		  <input type="text" name="A61"size="1">
+		  <input type="text" name="A62"size="1">
+		  <input type="text" name="A63"size="1">
+		  <input type="text" name="A64"size="1">
+		  <input type="text" name="A65"size="1">
+		  <input type="text" name="A66"size="1">
+		  <input type="text" name="A67"size="1">
+		  <input type="text" name="A68"size="1"><br>
+		  <input type="text" name="A70" size="1">
+		  <input type="text" name="A71"size="1">
+		  <input type="text" name="A72"size="1">
+		  <input type="text" name="A73"size="1">
+		  <input type="text" name="A74"size="1">
+		  <input type="text" name="A75"size="1">
+		  <input type="text" name="A76"size="1">
+		  <input type="text" name="A77"size="1">
+		  <input type="text" name="A78"size="1"><br>
+		  <input type="text" name="A80" size="1">
+		  <input type="text" name="A81"size="1">
+		  <input type="text" name="A82"size="1">
+		  <input type="text" name="A83"size="1">
+		  <input type="text" name="A84"size="1">
+		  <input type="text" name="A85"size="1">
+		  <input type="text" name="A86"size="1">
+		  <input type="text" name="A87"size="1">
+		  <input type="text" name="A88"size="1"><br>
+		  <input type="text" name="A00" size="1">
+		  <input type="text" name="A01"size="1">
+		  <input type="text" name="A02"size="1">
+		  <input type="text" name="A03"size="1">
+		  <input type="text" name="A04"size="1">
+		  <input type="text" name="A05"size="1">
+		  <input type="text" name="A06"size="1">
+		  <input type="text" name="A07"size="1">
+		  <input type="text" name="A08"size="1"><br>
+		  <button type="submit">Enter</button>
+		</form>
+		
+		<script language = "javascript">
+			to_array();
+		</script>
+
+	</body>
+
+</html>
